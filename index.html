@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Penting untuk responsivitas Mobile -->
+
+  <!-- SEO UTAMA -->
+  <title>Jasa Konveksi Murah & Berkualitas | FB Production</title>
+
+  <meta name="description" content="Jasa konveksi terpercaya untuk pembuatan kaos, seragam, hoodie, dan custom lainnya. Harga terjangkau, kualitas terbaik, bisa order satuan & partai." />
+  <meta name="keywords" content="jasa konveksi, konveksi kaos, konveksi murah, sablon kaos, bikin seragam, konveksi terdekat" />
+
+  <!-- GEO TARGET -->
+  <meta name="geo.region" content="ID" />
+  <meta name="geo.placename" content="Indonesia" />
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="Jasa Konveksi Murah & Berkualitas" />
+  <meta property="og:description" content="Terima pembuatan kaos, hoodie, dan seragam custom. Bisa order kecil & besar." />
+  <meta property="og:type" content="website" />
+  
+  <title>FB Production — Konveksi Custom Premium</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Modern Icons (Lucide) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+<style>
+/* ========================================== */
+/* TEMA GLOBAL & LAYOUT UTAMA                 */
+/* ========================================== */
+:root {
+  --ink: #1e293b;        
+  --mid: #475569;        
+  --light: #94a3b8;      
+  --paper: #ffffff;      
+  --cream: #f0f9ff;      
+  --white: #ffffff;
+  --ocean: #0ea5e9;      
+  --ocean-dk: #0284c7;   
+  --ocean-darker: #0369a1;
+  --gold: #d4af37;       
+  --gold-lt: #f3e5ab;
+  --gold-dk: #aa8c2c;
+  --border-light: rgba(14, 165, 233, 0.15); 
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'Inter', sans-serif;
+  --ease: cubic-bezier(.25,.46,.45,.94);
+  --spring: cubic-bezier(.34,1.56,.64,1);
+  --fast: .2s var(--ease);
+  --med: .4s var(--ease);
+  --slow: .65s var(--ease);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;outline:none;}
+
+/* Icon Styles Global */
+.lucide { stroke-width: 1.5; display: inline-block; vertical-align: middle; }
+.trust-icon .lucide { width: 22px; height: 22px; stroke: var(--ocean-dk); }
+.pillar-icon .lucide { width: 24px; height: 24px; stroke: var(--ocean-dk); }
+.svc-icon .lucide { width: 28px; height: 28px; stroke: var(--ocean-dk); }
+.step-bub .lucide { width: 32px; height: 32px; stroke: #fff; }
+.det-icon .lucide { width: 20px; height: 20px; stroke: var(--ocean-dk); }
+.btn .lucide { width: 16px; height: 16px; }
+
+/* Animasi Kemunculan Element (Reveal) */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+.reveal-l{opacity:0;transform:translateX(-30px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.reveal-l.visible{opacity:1;transform:none}
+.reveal-r{opacity:0;transform:translateX(30px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.reveal-r.visible{opacity:1;transform:none}
+
+section{padding:108px 0}
+.container{max-width:1220px;margin:0 auto;padding:0 36px}
+
+/* Tipografi & Komponen Pendukung */
+.sec-lbl{display:inline-flex;align-items:center;gap:10px;font-size:.66rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--ocean-dk);margin-bottom:16px}
+.sec-lbl::before{content:'';display:block;width:26px;height:2px;background:linear-gradient(90deg,var(--ocean),transparent)}
+.sec-title{font-family:var(--serif);font-size:clamp(2rem,3.8vw,3.1rem);font-weight:700;line-height:1.18;color:var(--ink)}
+
+.dvd{display:flex;align-items:center;gap:10px;margin:20px 0 0}
+.dvd-line{height:2px;width:44px;background:linear-gradient(90deg,var(--ocean-dk),transparent)}
+.dvd-gem{width:6px;height:6px;background:var(--ocean-dk);transform:rotate(45deg);flex-shrink:0}
+.dvd-c{justify-content:center}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border-radius:100px;transition:all var(--fast);cursor:pointer;position:relative;overflow:hidden}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-dk));color:#fff;box-shadow:0 6px 20px rgba(212, 175, 55, 0.3)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(212, 175, 55, 0.45)}
+.btn-outline{background:transparent;color:var(--ocean-dk);border:2px solid var(--ocean-dk)}
+.btn-outline:hover{background:var(--ocean-dk);color:#fff;transform:translateY(-2px);box-shadow:0 8px 20px rgba(2, 132, 199, 0.2)}
+.btn-ghost{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(4px)}
+.btn-ghost:hover{background:rgba(255,255,255,.25);color:#fff;transform:translateY(-2px)}
+
+/* TICKER */
+.ticker{background:var(--ocean-darker);overflow:hidden;padding:12px 0;position:relative;z-index:1001}
+.ticker-track{display:flex;white-space:nowrap;animation:ticker 35s linear infinite}
+.ticker-track span{font-size:.66rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#fff;padding:0 32px}
+.ticker-track span::after{content:'✦';margin-left:32px;color:var(--gold)}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* NAVBAR */
+#navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:18px 0;transition:background var(--slow),padding var(--slow),box-shadow var(--slow)}
+#navbar.scrolled{background:rgba(255,255,255,.98);backdrop-filter:blur(24px);padding:12px 0;box-shadow:0 4px 30px rgba(0,0,0,.06)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;flex-direction:column;gap:2px}
+.nav-logo-main{font-family:var(--serif);font-size:1.45rem;font-weight:700;color:#fff;letter-spacing:.03em;line-height:1;transition:color var(--fast)}
+.nav-logo-sub{font-size:.54rem;font-weight:500;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.8);transition:color var(--fast)}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.9);transition:color var(--fast);position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:2px;background:var(--gold);transition:width var(--fast)}
+.nav-links a:hover{color:#fff}
+.nav-links a:hover::after{width:100%}
+.hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:all var(--fast)}
+
+#navbar.scrolled .nav-logo-main { color: var(--ink); }
+#navbar.scrolled .nav-logo-sub { color: var(--ocean-dk); }
+#navbar.scrolled .nav-links a { color: var(--mid); }
+#navbar.scrolled .nav-links a:hover { color: var(--ocean-dk); }
+#navbar.scrolled .hamburger span { background: var(--ink); }
+
+.nav-cta{margin-left:8px}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:4px}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;flex-direction:column;background:rgba(255,255,255,.98);backdrop-filter:blur(24px);padding:16px 36px 28px;border-top:1px solid rgba(0,0,0,.05);box-shadow:0 10px 30px rgba(0,0,0,.1)}
+.mobile-menu a{color:var(--ink);font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:14px 0;border-bottom:1px solid rgba(0,0,0,.05);transition:color var(--fast)}
+.mobile-menu a:hover{color:var(--ocean-dk)}
+.mobile-menu .btn{margin-top:18px;justify-content:center}
+
+/* HERO */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg, var(--ocean-dk), var(--ocean));overflow:hidden;padding-top:80px}
+.hero-bg{position:absolute;inset:0;background:url('image/latar2.jpg') center/cover;opacity:.50;mix-blend-mode:overlay}
+.hero-grid-overlay{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero-glow-r{position:absolute;top:-20%;right:-10%;width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.2) 0%,transparent 60%);pointer-events:none}
+.hero-content{position:relative;z-index:2;max-width:760px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:12px;margin-bottom:26px;background:rgba(255,255,255,.15);padding:6px 16px;border-radius:100px;backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.2)}
+.hero-eyebrow-text{font-size:.63rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#fff}
+.hero-title{font-family:var(--serif);font-size:clamp(2.2rem, 7vw, 5.2rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:20px;text-shadow:0 4px 20px rgba(0,0,0,.1)}
+.hero-title .hi{font-style:italic;color:var(--gold-lt)}
+.hero-title .ho{color:#fff}
+.hero-sub{font-size:1.05rem;font-weight:400;color:rgba(255,255,255,.9);line-height:1.8;max-width:540px;margin-bottom:40px;text-shadow:0 2px 10px rgba(0,0,0,.05)}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:52px}
+.hero-stats{display:flex;gap:0;border-top:1px solid rgba(255,255,255,.2);padding-top:24px;max-width:460px}
+.hs{flex:1;text-align:center;padding:0 14px}
+.hs+.hs{border-left:1px solid rgba(255,255,255,.2)}
+.hs-num{font-family:var(--serif);font-size:2rem;font-weight:700;color:#fff;line-height:1;display:block}
+.hs-num em{color:var(--gold-lt);font-style:normal}
+.hs-lbl{font-size:.6rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.8);display:block;margin-top:6px}
+.scroll-bob{position:absolute;bottom:32px;right:32px;z-index:2;display:flex;flex-direction:column;align-items:center;gap:6px}
+.scroll-ring{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+.scroll-ring .lucide{width:16px;height:16px;stroke:#fff;}
+.scroll-txt{font-size:.55rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.8);writing-mode:vertical-rl;transform:rotate(180deg)}
+
+/* TRUST BAR */
+.trust-bar{background:var(--white);border-bottom:1px solid rgba(0,0,0,.05);padding:28px 0;box-shadow:0 4px 20px rgba(0,0,0,.02)}
+.trust-inner{display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:.78rem;font-weight:600;color:var(--mid);letter-spacing:.02em}
+
+/* ABOUT */
+#tentang{background:var(--paper)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-img-wrap{position:relative}
+.about-img-main{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:8px;box-shadow:0 28px 60px rgba(2, 132, 199, 0.15)}
+.about-img-accent{position:absolute;bottom:-28px;right:-28px;width:50%;aspect-ratio:1;object-fit:cover;border-radius:8px;border:8px solid var(--paper);box-shadow:0 14px 40px rgba(0,0,0,.1)}
+.about-tag{position:absolute;top:24px;left:-20px;background:linear-gradient(135deg,var(--gold),var(--gold-dk));color:#fff;padding:16px 20px;border-radius:4px;box-shadow:0 10px 30px rgba(212, 175, 55, 0.4);text-align:center}
+.about-tag-num{font-family:var(--serif);font-size:2.2rem;font-weight:700;line-height:1;display:block}
+.about-tag-lbl{font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.about-body{padding-left:8px}
+.about-desc{font-size:1.02rem;font-weight:400;line-height:1.85;color:var(--mid);margin:26px 0 36px}
+.about-pillars{display:flex;flex-direction:column;gap:14px}
+.pillar{display:flex;gap:16px;align-items:flex-start;padding:20px;border:1px solid transparent;border-radius:6px;transition:all var(--fast);background:var(--cream)}
+.pillar:hover{background:var(--white);border-color:var(--border-light);box-shadow:0 8px 24px rgba(2, 132, 199, 0.08);transform:translateX(5px)}
+.pillar-icon{width:46px;height:46px;min-width:46px;background:var(--white);border:1px solid var(--border-light);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(2, 132, 199, 0.1)}
+.pillar-title{font-family:var(--serif);font-size:1.05rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.pillar-desc{font-size:.82rem;color:var(--mid);line-height:1.65}
+
+/* SERVICES */
+#layanan{background:var(--cream)}
+.services-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:56px}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.svc{background:var(--white);padding:44px 36px;border-radius:8px;position:relative;overflow:hidden;transition:all var(--med);box-shadow:0 4px 16px rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.04)}
+.svc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--ocean),var(--ocean-dk));transform:scaleX(0);transform-origin:left;transition:transform var(--slow)}
+.svc:hover{transform:translateY(-8px);box-shadow:0 16px 40px rgba(2, 132, 199, 0.12)}
+.svc:hover::after{transform:scaleX(1)}
+.svc:hover .svc-icon{transform:scale(1.1);background:var(--ocean);border-color:var(--ocean)}
+.svc:hover .svc-icon .lucide{stroke:#fff}
+.svc-icon{width:58px;height:58px;border-radius:12px;background:var(--cream);border:1px solid var(--border-light);display:flex;align-items:center;justify-content:center;margin-bottom:26px;transition:all var(--fast)}
+.svc-title{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--ink);margin-bottom:12px}
+.svc-desc{font-size:.85rem;line-height:1.75;color:var(--mid)}
+.svc-num{position:absolute;bottom:14px;right:20px;font-family:var(--serif);font-size:4.5rem;font-weight:700;color:rgba(14, 165, 233, 0.05);line-height:1}
+
+/* CSS KHUSUS PORTFOLIO & LIGHTBOX */
+#portfolio { background: var(--paper); }
+.portfolio-head { text-align: center; margin-bottom: 48px; }
+.portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.pf-item { position: relative; overflow: hidden; border-radius: 8px; cursor: pointer; aspect-ratio: 4/3; box-shadow: 0 8px 24px rgba(0,0,0,.06); }
+.pf-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease); }
+.pf-item:hover img { transform: scale(1.07); }
+.pf-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(3, 105, 161, .9) 0%, rgba(3, 105, 161, .2) 55%, transparent 100%); opacity: 0; transition: opacity var(--med); display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; }
+.pf-item:hover .pf-overlay { opacity: 1; }
+.pf-zoom { position: absolute; top: 16px; right: 16px; width: 40px; height: 40px; border-radius: 50%; background: var(--gold); border: none; display: flex; align-items: center; justify-content: center; transform: scale(0); transition: transform var(--spring) .08s; cursor: pointer; box-shadow: 0 4px 14px rgba(212, 175, 55, 0.4); }
+.pf-zoom .lucide { stroke: #fff; width: 18px; height: 18px; }
+.pf-item:hover .pf-zoom { transform: scale(1); }
+.pf-label { font-family: var(--serif); font-size: 1.15rem; font-weight: 700; color: #fff; }
+.pf-tag { font-size: .6rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-lt); margin-top: 4px; }
+
+/* Lightbox Pop-up CSS */
+#lightbox { position: fixed; inset: 0; z-index: 9999; background: rgba(15, 23, 42, .96); backdrop-filter: blur(14px); display: none; align-items: center; justify-content: center; padding: 20px; }
+#lightbox.active { display: flex; }
+.lb-inner { position: relative; max-width: 900px; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.lb-wrap { position: relative; width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 32px 100px rgba(0,0,0,.5); }
+#lbImg { width: 100%; max-height: 74vh; object-fit: contain; background: #1e293b; display: block; animation: lbpop .3s var(--spring); }
+@keyframes lbpop { from { transform: scale(.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.lb-meta { text-align: center; font-size: .8rem; color: rgba(255,255,255,.7); letter-spacing: .06em; }
+.lb-meta strong { color: var(--gold-lt); font-family: var(--serif); font-size: 1.05rem; font-weight: 600; }
+.lb-close { position: absolute; top: -12px; right: -12px; width: 44px; height: 44px; border-radius: 50%; background: var(--gold); color: #fff; display: flex; align-items: center; justify-content: center; transition: all var(--fast); box-shadow: 0 4px 14px rgba(212, 175, 55, 0.5); border: none; cursor: pointer; }
+.lb-close:hover { background: #fff; color: var(--ink); transform: scale(1.1); }
+.lb-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,.15); color: #fff; display: flex; align-items: center; justify-content: center; transition: all var(--fast); border: 1px solid rgba(255,255,255,.2); z-index: 2; backdrop-filter: blur(4px); cursor: pointer; }
+.lb-nav:hover { background: var(--ocean); border-color: var(--ocean); transform: translateY(-50%) scale(1.08); }
+.lb-prev { left: -64px; }
+.lb-next { right: -64px; }
+.lb-dots { display: flex; gap: 10px; margin-top: 8px; flex-wrap: wrap; justify-content: center; max-width: 90vw; }
+.lb-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.3); cursor: pointer; transition: all var(--fast); border: none; padding: 0; }
+.lb-dot.active { background: var(--gold-lt); width: 24px; border-radius: 100px; }
+
+/* TESTIMONI */
+#testimoni{background:var(--cream)}
+.testi-head{text-align:center;margin-bottom:52px}
+.testi-wrap{position:relative;overflow:hidden;padding:20px 0}
+.testi-track{display:flex;gap:24px;transition:transform .65s var(--ease)}
+.testi-card{min-width:calc(33.333% - 16px);background:var(--white);border:1px solid rgba(0,0,0,.04);border-radius:8px;padding:40px 32px;position:relative;box-shadow:0 8px 24px rgba(0,0,0,.04);transition:box-shadow var(--med),transform var(--med)}
+.testi-card:hover{box-shadow:0 16px 40px rgba(2, 132, 199, 0.1);transform:translateY(-4px)}
+.testi-stars{color:var(--gold);font-size:.9rem;letter-spacing:2px;margin-bottom:16px}
+.testi-q{font-family:var(--serif);font-size:3rem;color:var(--ocean);line-height:1;margin-bottom:10px;opacity:0.3}
+.testi-text{font-size:.9rem;line-height:1.8;color:var(--mid);margin-bottom:26px;font-style:italic}
+.testi-author{display:flex;align-items:center;gap:14px}
+.testi-av{width:52px;height:52px;border-radius:50%;background-size:cover;background-position:center;border:3px solid var(--cream);box-shadow:0 4px 12px rgba(0,0,0,0.08);flex-shrink:0}
+.testi-name{font-family:var(--serif);font-size:1.05rem;font-weight:700;color:var(--ink)}
+.testi-role{font-size:.72rem;color:var(--ocean-dk);font-weight:600}
+.testi-controls{display:flex;justify-content:center;gap:10px;margin-top:20px}
+.testi-dot{width:8px;height:8px;border-radius:50%;background:rgba(2, 132, 199, 0.2);cursor:pointer;transition:all var(--fast)}
+.testi-dot.active{background:var(--ocean-dk);width:24px;border-radius:100px}
+.testi-nav{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;background:var(--white);border:1px solid rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;color:var(--ink);z-index:5;transition:all var(--fast);box-shadow:0 4px 12px rgba(0,0,0,.05)}
+.testi-nav:hover{background:var(--ocean);color:#fff;border-color:var(--ocean);box-shadow:0 8px 20px rgba(14, 165, 233, 0.3)}
+.t-prev{left:-23px}
+.t-next{right:-23px}
+
+/* FAQ SECTION */
+#faq{background:var(--paper)}
+.faq-head{text-align:center;margin-bottom:52px}
+.faq-list{max-width:860px;margin:0 auto;border-top:1px solid rgba(0,0,0,.06)}
+.faq-item{border-bottom:1px solid rgba(0,0,0,.06)}
+.faq-btn{width:100%;display:flex;justify-content:space-between;align-items:center;padding:26px 16px;font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--ink);text-align:left;transition:color var(--fast), background var(--fast)}
+.faq-btn:hover{color:var(--ocean-dk); background:rgba(240, 249, 255, 0.5)}
+.faq-btn .lucide{transition:transform var(--fast);stroke:var(--ocean-dk);width:22px;height:22px;}
+.faq-item.active .faq-btn{color:var(--ocean-dk)}
+.faq-item.active .faq-btn .lucide{transform:rotate(45deg);stroke:var(--ocean)}
+.faq-content{max-height:0;overflow:hidden;transition:max-height var(--med)}
+.faq-content p{font-size:.92rem;color:var(--mid);line-height:1.85;padding:0 16px 28px}
+
+/* PROSES */
+#proses{background:linear-gradient(135deg, var(--ocean-darker), var(--ocean-dk));overflow:hidden;position:relative}
+.proses-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:50px 50px;pointer-events:none}
+#proses .sec-lbl{color:var(--gold-lt)}
+#proses .sec-lbl::before{background:linear-gradient(90deg,var(--gold-lt),transparent)}
+#proses .sec-title{color:#fff}
+.process-head{text-align:center;margin-bottom:68px;position:relative;z-index:1}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;z-index:1}
+.proc-line{position:absolute;top:48px;left:12.5%;width:75%;height:2px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),rgba(255,255,255,.3),transparent)}
+.proc-step{text-align:center;padding:0 22px}
+.step-bub{width:96px;height:96px;border-radius:50%;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;margin:0 auto 26px;position:relative;transition:all var(--slow);backdrop-filter:blur(4px)}
+.step-bub:hover{background:rgba(255,255,255,.2);box-shadow:0 0 40px rgba(255,255,255,.15);transform:scale(1.05)}
+.step-idx{position:absolute;top:-4px;right:-4px;width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-dk));font-size:.65rem;font-weight:700;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.2)}
+.step-title{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:12px}
+.step-desc{font-size:.85rem;color:rgba(255,255,255,.8);line-height:1.75}
+
+/* KONTAK */
+#kontak{background:var(--cream)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.contact-desc{font-size:1.02rem;color:var(--mid);line-height:1.85;margin:24px 0 32px}
+.contact-details{display:flex;flex-direction:column;gap:16px;margin-bottom:32px}
+.contact-detail{display:flex;gap:16px;align-items:flex-start;padding:18px;border:1px solid rgba(0,0,0,.04);border-radius:6px;background:var(--white);transition:all var(--fast);box-shadow:0 4px 16px rgba(0,0,0,.02)}
+.contact-detail:hover{border-color:var(--border-light);box-shadow:0 8px 24px rgba(2, 132, 199, 0.08);transform:translateX(5px)}
+.det-icon{width:42px;height:42px;min-width:42px;background:var(--cream);border:1px solid var(--border-light);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.det-lbl{font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ocean-dk);display:block;margin-bottom:4px}
+.det-val{font-size:.9rem;font-weight:500;color:var(--ink);line-height:1.5}
+.det-val a{color:var(--ink);transition:color var(--fast)}
+.det-val a:hover{color:var(--ocean-dk)}
+.map-box{border-radius:8px;overflow:hidden;border:1px solid rgba(0,0,0,.06);box-shadow:0 8px 30px rgba(0,0,0,.06)}
+.map-box iframe{display:block;width:100%;height:240px;border:0}
+
+/* Form Kontak Bright */
+.contact-form{background:var(--white);border:1px solid rgba(0,0,0,.04);border-radius:8px;padding:48px 44px;box-shadow:0 16px 50px rgba(0,0,0,.05);position:sticky;top:100px}
+.cf-head-title{font-family:var(--serif);font-size:1.65rem;font-weight:700;color:var(--ink)}
+.cf-head-sub{font-size:.85rem;color:var(--mid);margin-top:8px;margin-bottom:32px}
+.fg{margin-bottom:20px}
+.fg label{display:block;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin-bottom:8px}
+.fg input,.fg textarea,.fg select{width:100%;padding:14px 16px;background:var(--paper);border:1px solid rgba(0,0,0,.1);border-radius:4px;font-family:var(--sans);font-size:.9rem;color:var(--ink);transition:all var(--fast);outline:none}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--ocean);box-shadow:0 0 0 4px rgba(14, 165, 233, 0.15);background:var(--white)}
+.fg textarea{resize:vertical;min-height:120px}
+.fg-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.f-submit{width:100%;justify-content:center;margin-top:8px;padding:16px;font-size:.85rem}
+
+/* FOOTER */
+footer{background:var(--ocean-darker)}
+.footer-top{padding:72px 0 56px}
+.footer-grid{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:56px}
+.fb-name{font-family:var(--serif);font-size:1.8rem;font-weight:700;color:#fff}
+.fb-tag{font-size:.6rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-lt);display:block;margin:6px 0 20px}
+.fb-desc{font-size:.88rem;color:rgba(255,255,255,.8);line-height:1.85;margin-bottom:28px;max-width:290px}
+.fb-addr{font-size:.85rem;color:rgba(255,255,255,.8);line-height:1.8;margin-bottom:32px}
+.fb-addr strong{color:#fff;display:block;margin-bottom:4px;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase}
+.footer-socials{display:flex;gap:14px}
+.soc-btn{display:inline-flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;padding:8px;transition:all var(--fast);cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+.soc-btn:hover{transform:translateY(-4px) scale(1.08);box-shadow:0 8px 20px rgba(0,0,0,0.2)}
+.soc-btn svg{width:22px;height:22px}
+.fc-title{font-family:var(--serif);font-size:1rem;font-weight:700;color:#fff;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.15)}
+.footer-links{display:flex;flex-direction:column;gap:12px}
+.footer-links a{font-size:.85rem;font-weight:500;color:rgba(255,255,255,.8);transition:all var(--fast)}
+.footer-links a:hover{color:var(--gold-lt);transform:translateX(4px)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.15);padding:24px 0;display:flex;justify-content:space-between;align-items:center}
+.f-copy{font-size:.75rem;color:rgba(255,255,255,.6)}
+.f-wa{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:600;color:#25d366;background:#fff;padding:10px 20px;border-radius:100px;transition:all var(--fast);box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.f-wa:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.15)}
+.f-wa .lucide { width: 16px; height: 16px; stroke: currentColor; }
+
+/* WA FLOAT */
+.wa-float{position:fixed;bottom:32px;right:32px;z-index:998}
+.wa-float-btn{width:60px;height:60px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(37,211,102,.5);transition:all var(--fast);animation:wabounce 3s ease-in-out infinite;cursor:pointer}
+.wa-float-btn .lucide { width: 28px; height: 28px; stroke: #fff; }
+@keyframes wabounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.wa-float-btn:hover{transform:scale(1.12)!important;animation-play-state:paused;box-shadow:0 12px 40px rgba(37,211,102,.6)}
+.wa-tip{position:absolute;right:72px;top:50%;transform:translateY(-50%);background:var(--ink);border-radius:100px;padding:8px 16px;font-size:.75rem;font-weight:600;color:#fff;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.15);opacity:0;pointer-events:none;transition:all var(--fast)}
+.wa-tip::after{content:'';position:absolute;right:-6px;top:50%;transform:translateY(-50%);border:6px solid transparent;border-right:none;border-left-color:var(--ink)}
+.wa-float:hover .wa-tip{opacity:1}
+
+/* RESPONSIVE UTAMA */
+@media(min-width:769px){
+  /* Mencegah menu mobile nyangkut jika layar di-resize ke ukuran desktop */
+  .mobile-menu{display:none !important}
+}
+
+@media(max-width:1100px){
+  .footer-grid{grid-template-columns:1fr 1fr;gap:40px}
+  .lb-prev{left:-50px}
+  .lb-next{right:-50px}
+}
+
+@media(max-width:1024px){
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .proc-line{display:none}
+}
+
+@media(max-width:900px){
+  .about-grid,.contact-grid{grid-template-columns:1fr;gap:56px}
+  .about-img-accent{display:none}.about-tag{left:-10px}
+  .contact-form{padding:36px 28px;position:static}
+}
+
+@media(max-width:768px){
+  section{padding:80px 0}
+  .container{padding:0 24px}
+  .nav-links,.nav-cta{display:none}
+  .hamburger{display:flex}
+  .services-grid{grid-template-columns:1fr;gap:16px}
+  .process-grid{grid-template-columns:repeat(2,1fr);gap:40px}
+  .testi-card{min-width:100%}
+  .testi-nav{display:none}
+  .services-head{flex-direction:column;gap:20px;align-items:flex-start}
+  .footer-grid{grid-template-columns:1fr;gap:32px}
+  .footer-bottom{flex-direction:column;gap:16px;text-align:center}
+  .trust-inner{gap:24px}
+  .fg-row{grid-template-columns:1fr}
+  .hero-stats{max-width:100%}
+  
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } 
+  .lb-nav{display:none} 
+
+  /* Hero Typografi Mobile (Tablet & ke bawah) */
+  .hero-title{font-size:2.6rem;line-height:1.2}
+  .hero-sub{font-size:.95rem;margin-bottom:32px}
+}
+
+@media(max-width:480px){
+  .hero-actions{flex-direction:column}
+  .hero-actions .btn{width:100%;justify-content:center}
+  .process-grid{grid-template-columns:1fr}
+  .about-tag{display:none}
+  .portfolio-grid { grid-template-columns: 1fr; } 
+  
+  /* Hero Mobile Optimized */
+  #hero{padding-top:100px;padding-bottom:60px;}
+  .hero-title{font-size:2.1rem; line-height:1.2;}
+  .hero-sub{font-size:0.9rem; margin-bottom:28px;}
+  .hero-stats{flex-wrap:wrap; gap:16px 0;}
+  .hs{padding:0 8px;}
+  .hs-num{font-size:1.6rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- TICKER BANNER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>Kaos Custom Premium</span><span>Hoodie & Sweater</span><span>Seragam Komunitas</span>
+    <span>Seragam Kerja</span><span>Sablon & Bordir</span><span>Konsultasi Desain Gratis</span>
+    <span>Pengiriman Seluruh Indonesia</span><span>Bahan Premium Terpilih</span>
+    <span>Kaos Custom Premium</span><span>Hoodie & Sweater</span><span>Seragam Komunitas</span>
+    <span>Seragam Kerja</span><span>Sablon & Bordir</span><span>Konsultasi Desain Gratis</span>
+    <span>Pengiriman Seluruh Indonesia</span><span>Bahan Premium Terpilih</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="nav-logo-main">FB Production</span>
+        <span class="nav-logo-sub">Premium Garment Studio · Kota Bandung</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <a href="https://wa.me/6281322910056?text=Halo%20FB%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="btn btn-gold nav-cta"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero" class="ml">Home</a><a href="#tentang" class="ml">Tentang</a>
+      <a href="#layanan" class="ml">Layanan</a><a href="#portfolio" class="ml">Portfolio</a>
+      <a href="#faq" class="ml">FAQ</a><a href="#kontak" class="ml">Kontak</a>
+      <a href="https://wa.me/6281322910056?text=Halo%20FB%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="btn btn-gold"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-glow-r"></div>
+  <div class="container" style="position:relative;z-index:2">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="hero-eyebrow-line"></span>
+        <span class="hero-eyebrow-text">Konveksi Custom Terpercaya · Kota Bandung</span>
+      </div>
+      <h1 class="hero-title">
+        Solusi Konveksi<br/><span class="hi">Custom</span> <span class="ho">Berkualitas</span>
+      </h1>
+      <p class="hero-sub">Produksi kaos, hoodie, dan seragam dengan bahan premium, jahitan presisi, dan harga terjangkau untuk semua kebutuhan Anda.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/6281322910056?text=Halo%20FB%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="btn btn-gold"><i data-lucide="shopping-cart"></i> Pesan Sekarang</a>
+        <a href="#portfolio" class="btn btn-ghost">Lihat Portfolio</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hs"><span class="hs-num" id="cnt1">500<em>+</em></span><span class="hs-lbl">Pelanggan Puas</span></div>
+        <div class="hs"><span class="hs-num">5<em>★</em></span><span class="hs-lbl">Rating Ulasan</span></div>
+        <div class="hs"><span class="hs-num" id="cnt2">7<em>+</em></span><span class="hs-lbl">Tahun Berdiri</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-bob">
+    <span class="scroll-txt">Scroll</span>
+    <div class="scroll-ring">
+      <i data-lucide="chevron-down"></i>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar reveal">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-item"><span class="trust-icon"><i data-lucide="shield-check"></i></span> Produk Berkualitas Premium</div>
+      <div class="trust-item"><span class="trust-icon"><i data-lucide="zap"></i></span> Proses Cepat & Tepat Waktu</div>
+      <div class="trust-item"><span class="trust-icon"><i data-lucide="message-square-text"></i></span> Konsultasi Desain Gratis</div>
+      <div class="trust-item"><span class="trust-icon"><i data-lucide="truck"></i></span> Kirim Seluruh Indonesia</div>
+      <div class="trust-item"><span class="trust-icon"><i data-lucide="lock"></i></span> Garansi Kepuasan</div>
+    </div>
+  </div>
+</div>
+
+<!-- TENTANG -->
+<section id="tentang">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal-l">
+        <div class="about-tag">
+          <span class="about-tag-num">7+</span>
+          <span class="about-tag-lbl">Tahun</span>
+        </div>
+        <img src="image/latar1.jpg" alt="Proses produksi FB Production" class="about-img-main" />
+        <img src="image/prosescuting1.jpg" alt="Detail jahitan" class="about-img-accent" />
+      </div>
+      <div class="about-body reveal-r">
+        <span class="sec-lbl">Tentang Kami</span>
+        <h2 class="sec-title">Lebih dari Sekadar<br/>Konveksi Biasa</h2>
+        <div class="dvd"><div class="dvd-line"></div><div class="dvd-gem"></div></div>
+        <p class="about-desc">FB Production adalah studio konveksi custom yang berbasis di Kota Bandung — berdedikasi menghadirkan produk pakaian berkualitas tinggi. Dari desain pertama hingga jahitan terakhir, kami memastikan setiap detail dikerjakan dengan standar premium yang konsisten.</p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar-icon"><i data-lucide="award"></i></div>
+            <div><div class="pillar-title">7+ Tahun Pengalaman</div><p class="pillar-desc">Sudah melayani ratusan klien mulai dari komunitas, UMKM, hingga perusahaan besar di seluruh Indonesia.</p></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><i data-lucide="scissors"></i></div>
+            <div><div class="pillar-title">Bahan Premium Terpilih</div><p class="pillar-desc">Hanya menggunakan kain berstandar tinggi — cotton combed, fleece premium, dan drill — untuk kenyamanan maksimal.</p></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><i data-lucide="zap"></i></div>
+            <div><div class="pillar-title">Produksi Cepat & Tepat</div><p class="pillar-desc">Proses produksi terstruktur memastikan pesanan selesai tepat waktu tanpa mengorbankan kualitas.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYANAN -->
+<section id="layanan">
+  <div class="container">
+    <div class="services-head">
+      <div class="reveal">
+        <span class="sec-lbl">Layanan Kami</span>
+        <h2 class="sec-title">Apa yang Bisa<br/>Kami Produksi</h2>
+        <div class="dvd" style="margin-top:18px"><div class="dvd-line"></div><div class="dvd-gem"></div></div>
+      </div>
+      <a href="#kontak" class="btn btn-outline reveal">Konsultasi Gratis</a>
+    </div>
+    <div class="services-grid reveal">
+      <div class="svc"><div class="svc-icon"><i data-lucide="shirt"></i></div><h3 class="svc-title">Kaos Custom</h3><p class="svc-desc">Cotton combed 20s–30s berkualitas tinggi. Sablon DTG, screen printing, dan transfer paper.</p><span class="svc-num">01</span></div>
+      <div class="svc"><div class="svc-icon"><i data-lucide="layers"></i></div><h3 class="svc-title">Hoodie & Sweater</h3><p class="svc-desc">Fleece dan cotton fleece dengan pilihan model pullover, zipper, cropped — untuk komunitas atau brand Anda.</p><span class="svc-num">02</span></div>
+      <div class="svc"><div class="svc-icon"><i data-lucide="users"></i></div><h3 class="svc-title">Seragam Komunitas</h3><p class="svc-desc">Seragam identitas komunitas, club, atau organisasi dengan desain custom yang mempererat kebersamaan.</p><span class="svc-num">03</span></div>
+      <div class="svc"><div class="svc-icon"><i data-lucide="briefcase"></i></div><h3 class="svc-title">Seragam Kerja</h3><p class="svc-desc">Seragam profesional untuk perusahaan, toko, dan institusi. Bahan drill, keper, oxford — finishing rapi dan tahan lama.</p><span class="svc-num">04</span></div>
+      <div class="svc"><div class="svc-icon"><i data-lucide="printer"></i></div><h3 class="svc-title">Sablon Premium</h3><p class="svc-desc">Sablon rubber, plastisol, foil, dan glow in the dark dengan hasil tajam dan awet meski dicuci berkali-kali.</p><span class="svc-num">05</span></div>
+      <div class="svc"><div class="svc-icon"><i data-lucide="pen-tool"></i></div><h3 class="svc-title">Bordir Eksklusif</h3><p class="svc-desc">Bordir komputer presisi tinggi untuk logo, nama, atau motif pada berbagai jenis kain dengan tampilan profesional.</p><span class="svc-num">06</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="container">
+    <div class="portfolio-head reveal">
+      <span class="sec-lbl">Portfolio Galeri</span>
+      <h2 class="sec-title">Hasil Karya Kami</h2>
+      <div class="dvd dvd-c"><div class="dvd-line"></div><div class="dvd-gem"></div></div>
+      <p style="font-size:.9rem;font-weight:500;color:var(--mid);margin-top:16px">Klik gambar untuk memperbesar <i data-lucide="search" style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-left:2px;stroke:var(--ocean-dk)"></i></p>
+    </div>
+    
+    <div class="portfolio-grid reveal" id="pgrid">
+      <!-- Item 1 -->
+      <div class="pf-item">
+        <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=700&q=80" alt="Kaos Komunitas Kreatif" data-tag="Kaos Custom · 150 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Kaos Komunitas Kreatif</div><div class="pf-tag">Kaos Custom · 150 pcs</div></div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="pf-item">
+        <img src="image/hodie3.jpg" alt="Hoodie Premium Series" data-tag="Hoodie · 80 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Hoodie Premium Series</div><div class="pf-tag">Hoodie · 80 pcs</div></div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="pf-item">
+        <img src="image/kemeja2.jpg" alt="Seragam Kantor Modern" data-tag="Seragam Kerja · 200 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Seragam Kantor Modern</div><div class="pf-tag">Seragam Kerja · 200 pcs</div></div>
+        </div>
+      </div>
+      <!-- Item 4 -->
+      <div class="pf-item">
+        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=700&q=80" alt="Jaket Tim Esport" data-tag="Jaket · 50 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Jaket Tim Esport</div><div class="pf-tag">Jaket · 50 pcs</div></div>
+        </div>
+      </div>
+      <!-- Item 5 -->
+      <div class="pf-item">
+        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=700&q=80" alt="Merchandise Brand Lokal" data-tag="Kaos + Totebag · 300 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Merchandise Brand Lokal</div><div class="pf-tag">Kaos + Totebag · 300 pcs</div></div>
+        </div>
+      </div>
+      <!-- Item 6 -->
+      <div class="pf-item">
+        <img src="image/produksi30.jpg" alt="Polo Shirt Bordir" data-tag="Polo Shirt · 120 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Polo Shirt Bordir</div><div class="pf-tag">Polo Shirt · 120 pcs</div></div>
+        </div>
+      </div>
+      <!-- Item 7 -->
+      <div class="pf-item">
+        <img src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=700&q=80" alt="Topi Custom Bordir" data-tag="Topi Event · 500 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Topi Custom Bordir</div><div class="pf-tag">Topi Event · 500 pcs</div></div>
+        </div>
+      </div>
+      <!-- Item 8 -->
+      <div class="pf-item">
+        <img src="image/kemeja3.jpg" alt="Kemeja PDH Lapangan" data-tag="Seragam Lapangan · 150 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Kemeja PDH Lapangan</div><div class="pf-tag">Seragam Lapangan · 150 pcs</div></div>
+        </div>
+      </div>
+      <!-- Item 9 -->
+      <div class="pf-item">
+        <img src="image/produksi31.jpg" alt="Apron / Celemek Barista" data-tag="Apron Canvas · 60 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Rompi Keselamatan</div><div class="pf-tag">Rompi Kerja · 60 pcs</div></div>
+        </div>
+      </div>
+      <!-- Item 10 -->
+      <div class="pf-item">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=700&q=80" alt="Kaos Polos Heavyweight" data-tag="Kaos Premium · 250 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Kaos Polos Heavyweight</div><div class="pf-tag">Kaos Premium · 250 pcs</div></div>
+        </div>
+      </div>
+      <!-- Item 11 -->
+      <div class="pf-item">
+        <img src="image/produksi33.jpg" alt="Sablon DTG Full Color" data-tag="Sablon Kaos · 400 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Sablon DTG Full Color</div><div class="pf-tag">Sablon Kaos · 400 pcs</div></div>
+        </div>
+      </div>
+      <!-- Item 12 -->
+      <div class="pf-item">
+        <img src="image/jaket4.jpg" alt="Seragam Medis & Safety" data-tag="Seragam Medis · 100 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Jaket Motor</div><div class="pf-tag">Jaket Komunitas · 100 pcs</div></div>
+        </div>
+      </div>
+      <!-- Item 13 -->
+      <div class="pf-item">
+        <img src="image/proses1.jpg" alt="Bordir Komputer Logo" data-tag="Jasa Bordir · 500 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Bordir Komputer Logo</div><div class="pf-tag">Jasa Bordir · 500 pcs</div></div>
+        </div>
+      </div>
+      <!-- Item 14 -->
+      <div class="pf-item">
+        <img src="image/produksi37.jpg" alt="Jaket Varsity Kampus" data-tag="Jaket Kampus · 180 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Jaket  Kampus</div><div class="pf-tag">Jaket Kampus · 180 pcs</div></div>
+        </div>
+      </div>
+      <!-- Item 15 -->
+      <div class="pf-item">
+        <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=700&q=80" alt="Merchandise Mug Spesial" data-tag="Merchandise Custom · 200 pcs" />
+        <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
+          <div><div class="pf-label">Merchandise Custom Mug</div><div class="pf-tag">Merchandise Custom · 200 pcs</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ELEMEN LIGHTBOX (Pop-up Gambar) -->
+<div id="lightbox">
+  <div class="lb-inner">
+    <div class="lb-wrap">
+      <img id="lbImg" src="" alt="" />
+      <button class="lb-close" id="lbClose"><i data-lucide="x" style="width:24px;height:24px;"></i></button>
+      <button class="lb-nav lb-prev" id="lbPrev"><i data-lucide="chevron-left"></i></button>
+      <button class="lb-nav lb-next" id="lbNext"><i data-lucide="chevron-right"></i></button>
+    </div>
+    <div class="lb-meta" id="lbMeta"></div>
+    <div class="lb-dots" id="lbDots"></div>
+  </div>
+</div>
+
+<!-- TESTIMONI -->
+<section id="testimoni">
+  <div class="container">
+    <div class="testi-head reveal">
+      <span class="sec-lbl">Testimoni</span>
+      <h2 class="sec-title">Kata Pelanggan Kami</h2>
+      <div class="dvd dvd-c"><div class="dvd-line"></div><div class="dvd-gem"></div></div>
+    </div>
+    <div class="testi-wrap reveal">
+      <button class="testi-nav t-prev" id="testiPrev"><i data-lucide="chevron-left" style="width:24px;height:24px;"></i></button>
+      <div class="testi-track" id="testiTrack">
+        <!-- Card 1 -->
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div><div class="testi-q">"</div>
+          <p class="testi-text">Hasil sablon sangat rapi dan detail, warnanya presisi sesuai desain yang kami kirim. Tim FB Production juga responsif dan selalu update proses produksi.</p>
+          <div class="testi-author">
+            <div class="testi-av" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80');"></div>
+            <div><div class="testi-name">Rendi Dwi Saputra</div><div class="testi-role">Ketua Komunitas Motor</div></div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div><div class="testi-q">"</div>
+          <p class="testi-text">Sudah 3 kali order seragam kerja di sini. Kualitasnya konsisten, jahitan kuat, dan pengirimannya selalu tepat waktu. Sangat recommended!</p>
+          <div class="testi-author">
+            <div class="testi-av" style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80');"></div>
+            <div><div class="testi-name">Siti Aminah</div><div class="testi-role">HRD Perusahaan Retail</div></div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div><div class="testi-q">"</div>
+          <p class="testi-text">Order 200 kaos untuk merchandise acara, hasilnya memuaskan banget. Kain tebal, sablon awet, dan harganya sangat bersahabat. Pasti order lagi!</p>
+          <div class="testi-author">
+            <div class="testi-av" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&q=80');"></div>
+            <div><div class="testi-name">Bagas Nugraha</div><div class="testi-role">Event Organizer</div></div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div><div class="testi-q">"</div>
+          <p class="testi-text">Bordir logonya sangat halus dan presisi. Bahan polo shirt yang dipilihkan nyaman dipakai seharian. Pelayanan ramah dan profesional!</p>
+          <div class="testi-author">
+            <div class="testi-av" style="background-image: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&q=80');"></div>
+            <div><div class="testi-name">Yuni Pratiwi</div><div class="testi-role">Owner Butik Fashion</div></div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div><div class="testi-q">"</div>
+          <p class="testi-text">Hoodie fleece untuk tim esport kualitasnya premium banget. Desain custom diwujudkan dengan sangat baik, seluruh tim sangat puas!</p>
+          <div class="testi-author">
+            <div class="testi-av" style="background-image: url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&q=80');"></div>
+            <div><div class="testi-name">Fajar Hidayat</div><div class="testi-role">Manager Tim Esport</div></div>
+          </div>
+        </div>
+      </div>
+      <button class="testi-nav t-next" id="testiNext"><i data-lucide="chevron-right" style="width:24px;height:24px;"></i></button>
+    </div>
+    <div class="testi-controls" id="testiDots"></div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-head reveal">
+      <span class="sec-lbl">FAQ</span>
+      <h2 class="sec-title">Pertanyaan Umum</h2>
+      <div class="dvd dvd-c"><div class="dvd-line"></div><div class="dvd-gem"></div></div>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-btn"><span>1. Berapa minimum order (MOQ) untuk pemesanan?</span><i data-lucide="plus"></i></button>
+        <div class="faq-content"><p>Minimum order di FB Production adalah 12 pcs per desain/warna. Untuk jumlah di atas 100 pcs, kami memberikan harga khusus yang lebih terjangkau.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn"><span>2. Berapa lama waktu pengerjaan / produksi?</span><i data-lucide="plus"></i></button>
+        <div class="faq-content"><p>Waktu standar produksi kami adalah 10 hingga 14 hari kerja setelah desain disetujui dan DP dibayarkan. Waktu ini bisa berubah tergantung pada antrean dan tingkat kesulitan detail sablon/bordir Anda.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn"><span>3. Apakah saya bisa meminta sampel produk sebelum produksi massal?</span><i data-lucide="plus"></i></button>
+        <div class="faq-content"><p>Ya, kami dapat membuat sampel fisik berbayar sebelum produksi massal dimulai. Jika Anda melanjutkan produksi masal bersama kami, biaya pembuatan sampel tersebut akan dipotong sebagian.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn"><span>4. Apakah FB Production menyediakan jasa desain?</span><i data-lucide="plus"></i></button>
+        <div class="faq-content"><p>Tentu saja. Kami memiliki tim desainer internal yang siap membantu memvisualisasikan ide Anda. Jasa desain kami berikan <strong>gratis</strong> khusus untuk Anda yang sudah melakukan pembayaran uang muka (DP).</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn"><span>5. Jenis bahan apa saja yang tersedia?</span><i data-lucide="plus"></i></button>
+        <div class="faq-content"><p>Untuk kaos, kami sedia Cotton Combed 20s/24s/30s, Cotton Bamboo, dan Heavyweight Cotton. Untuk hoodie, tersedia Fleece Premium dan Terry. Sementara untuk seragam/kemeja, tersedia American Drill, Nagata Drill, hingga bahan Oxford.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn"><span>6. Bagaimana sistem pembayarannya?</span><i data-lucide="plus"></i></button>
+        <div class="faq-content"><p>Kami menerapkan sistem pembayaran Uang Muka (DP) sebesar 50% untuk memulai proses pengerjaan. Sisa pelunasan dibayarkan ketika seluruh produk telah selesai dikerjakan dan siap dikirim.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn"><span>7. Apakah melayani pengiriman ke luar pulau?</span><i data-lucide="plus"></i></button>
+        <div class="faq-content"><p>Pasti. Kami bekerja sama dengan berbagai ekspedisi terpercaya (JNE, J&T, Indah Cargo, Kargo Darat/Laut) untuk menjangkau pengiriman ke seluruh wilayah di Indonesia dengan aman.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn"><span>8. Jenis sablon apa yang paling awet?</span><i data-lucide="plus"></i></button>
+        <div class="faq-content"><p>Untuk daya tahan maksimal, kami merekomendasikan Sablon Plastisol dan Sablon DTF Premium. Keduanya memiliki warna yang tajam, anti-luntur, dan anti-retak asalkan dijemur dan disetrika dengan cara yang benar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn"><span>9. Apakah ada garansi untuk produk yang cacat?</span><i data-lucide="plus"></i></button>
+        <div class="faq-content"><p>FB Production menjamin 100% garansi perbaikan atau penggantian barang baru jika terdapat cacat pabrik, jahitan lepas, cacat sablon, atau kesalahan warna yang tidak sesuai dengan nota kesepakatan produksi.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn"><span>10. Bisakah saya membawa kain sendiri (Makloon)?</span><i data-lucide="plus"></i></button>
+        <div class="faq-content"><p>Sangat bisa. Kami menyediakan jasa Makloon (jasa potong, jahit, sablon/bordir saja) apabila Anda ingin mengirimkan bahan material pilihan Anda sendiri. Silakan diskusikan lebih lanjut kepada admin kami.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROSES -->
+<section id="proses">
+  <div class="proses-bg"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <div class="process-head reveal">
+      <span class="sec-lbl">Cara Pemesanan</span>
+      <h2 class="sec-title">Proses Mudah & Transparan</h2>
+      <div class="dvd dvd-c"><div class="dvd-line"></div><div class="dvd-gem"></div></div>
+    </div>
+    <div class="process-grid reveal">
+      <div class="proc-line"></div>
+      <div class="proc-step">
+        <div class="step-bub"><i data-lucide="message-circle-question"></i><span class="step-idx">1</span></div>
+        <h3 class="step-title">Konsultasi Desain</h3>
+        <p class="step-desc">Diskusikan kebutuhan, konsep desain, kuantitas, dan anggaran bersama tim kami via WhatsApp.</p>
+      </div>
+      <div class="proc-step">
+        <div class="step-bub"><i data-lucide="swatch-book"></i><span class="step-idx">2</span></div>
+        <h3 class="step-title">Pilih Bahan</h3>
+        <p class="step-desc">Kami rekomendasikan pilihan kain terbaik sesuai fungsi dan anggaran. Sample dapat dikirimkan.</p>
+      </div>
+      <div class="proc-step">
+        <div class="step-bub"><i data-lucide="settings"></i><span class="step-idx">3</span></div>
+        <h3 class="step-title">Proses Produksi</h3>
+        <p class="step-desc">Produksi berjalan dengan quality control ketat di setiap tahap. Anda mendapat update berkala.</p>
+      </div>
+      <div class="proc-step">
+        <div class="step-bub"><i data-lucide="truck"></i><span class="step-idx">4</span></div>
+        <h3 class="step-title">Pengiriman</h3>
+        <p class="step-desc">Produk dikemas rapi dan dikirim ke seluruh Indonesia. COD tersedia untuk area Kota Bandung.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section id="kontak">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Info -->
+      <div class="reveal-l">
+        <span class="sec-lbl">Hubungi Kami</span>
+        <h2 class="sec-title">Mari Wujudkan<br/>Pesanan Anda</h2>
+        <div class="dvd"><div class="dvd-line"></div><div class="dvd-gem"></div></div>
+        <p class="contact-desc">Tim kami siap membantu dari konsultasi desain hingga pengiriman produk. Hubungi kapan saja via WhatsApp.</p>
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="det-icon"><i data-lucide="map-pin"></i></div>
+            <div><span class="det-lbl">Alamat</span><span class="det-val">Jl. Surapati No 78, Kota Bandung</span></div>
+          </div>
+          <div class="contact-detail">
+            <div class="det-icon"><i data-lucide="smartphone"></i></div>
+            <div><span class="det-lbl">WhatsApp / Telepon</span><span class="det-val"><a href="https://wa.me/6281322910056" target="_blank">0813-2291-0056</a></span></div>
+          </div>
+          <div class="contact-detail">
+            <div class="det-icon"><i data-lucide="clock"></i></div>
+            <div><span class="det-lbl">Jam Operasional</span><span class="det-val">Senin – Sabtu, 08.00 – 17.00 WIB</span></div>
+          </div>
+          <div class="contact-detail">
+            <div class="det-icon"><i data-lucide="package"></i></div>
+            <div><span class="det-lbl">Minimum Order</span><span class="det-val">12 pcs per desain (negosiasi tersedia)</span></div>
+          </div>
+        </div>
+        <!-- Google Maps -->
+        <div class="map-box">
+          <iframe
+            src="https://maps.google.com/maps?q=Jl.+Surapati+No.+78,+Kota+Bandung&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Lokasi FB Production - Kota Bandung">
+          </iframe>
+        </div>
+      </div>
+      <!-- Form -->
+      <div class="contact-form reveal-r">
+        <div class="cf-head-title">Kirim Pesanan</div>
+        <div class="cf-head-sub">Pesan Anda akan terhubung langsung ke WhatsApp kami</div>
+        <div class="fg-row">
+          <div class="fg"><label>Nama Lengkap</label><input type="text" id="fNama" placeholder="Budi Santoso" /></div>
+          <div class="fg"><label>No. WhatsApp</label><input type="tel" id="fPhone" placeholder="08123456789" /></div>
+        </div>
+        <div class="fg">
+          <label>Jenis Produk</label>
+          <select id="fProduk">
+            <option value="">— Pilih produk —</option>
+            <option>Kaos Custom</option><option>Hoodie / Sweater</option>
+            <option>Seragam Komunitas</option><option>Seragam Kerja</option>
+            <option>Sablon / Bordir</option><option>Lainnya</option>
+          </select>
+        </div>
+        <div class="fg-row">
+          <div class="fg"><label>Jumlah (pcs)</label><input type="number" id="fQty" placeholder="min. 12" min="12" /></div>
+          <div class="fg">
+            <label>Target Anggaran</label>
+            <select id="fBudget">
+              <option value="">— Pilih —</option>
+              <option>Di bawah Rp 1 juta</option><option>Rp 1 – 5 juta</option>
+              <option>Rp 5 – 20 juta</option><option>Di atas Rp 20 juta</option>
+            </select>
+          </div>
+        </div>
+        <div class="fg"><label>Detail Pesanan</label><textarea id="fPesan" placeholder="Ceritakan kebutuhan: desain, ukuran, warna, deadline, dll."></textarea></div>
+        <button class="btn btn-gold f-submit" onclick="kirimWA()"><i data-lucide="send"></i> Kirim via WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="fb-name">FB Production</div>
+          <span class="fb-tag">Premium Garment Studio</span>
+          <p class="fb-desc">Solusi konveksi custom berkualitas untuk komunitas, bisnis, dan personal brand. Berkomitmen menghadirkan produk terbaik dengan harga yang adil.</p>
+          <div class="fb-addr">
+            <strong>📍 Lokasi Kami</strong>
+            Jl. Surapati No 78<br/>Kota Bandung<br/>
+            <a href="https://wa.me/6281322910056" target="_blank" style="color:var(--gold-lt);margin-top:6px;display:inline-flex;align-items:center;gap:6px;font-weight:600"><i data-lucide="smartphone" style="width:16px;height:16px;"></i> 0813-2291-0056</a>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="soc-btn" aria-label="Instagram">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="ig-grad" x1="7.2" y1="28.8" x2="28.8" y2="7.2" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FEE411"/><stop offset="0.05" stop-color="#FDF497"/><stop offset="0.25" stop-color="#FD5949"/><stop offset="0.6" stop-color="#D6249F"/><stop offset="1" stop-color="#285AEB"/>
+                  </linearGradient>
+                </defs>
+                <rect width="36" height="36" rx="10" fill="url(#ig-grad)"/>
+                <path d="M18 24.5C21.5899 24.5 24.5 21.5899 24.5 18C24.5 14.4101 21.5899 11.5 18 11.5C14.4101 11.5 11.5 14.4101 11.5 18C11.5 21.5899 14.4101 24.5 18 24.5Z" stroke="white" stroke-width="2"/>
+                <rect x="8" y="8" width="20" height="20" rx="6" stroke="white" stroke-width="2"/>
+                <circle cx="24.5" cy="11.5" r="1.5" fill="white"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/6281322910056" target="_blank" class="soc-btn" aria-label="WhatsApp">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="18" fill="#25D366"/>
+                <path d="M18 7.5C12.201 7.5 7.5 12.201 7.5 18C7.5 20.301 8.244 22.431 9.486 24.168L8.1 28.5L12.552 27.135C14.193 28.2 16.035 28.5 18 28.5C23.799 28.5 28.5 23.799 28.5 18C28.5 12.201 23.799 7.5 18 7.5ZM23.328 23.085C23.106 23.715 22.014 24.231 21.342 24.324C20.784 24.411 20.022 24.516 17.187 23.346C13.782 21.933 11.604 18.435 11.436 18.204C11.268 17.982 10.092 16.416 10.092 14.793C10.092 13.17 10.923 12.375 11.25 12.036C11.523 11.751 12.006 11.625 12.447 11.625C12.594 11.625 12.72 11.625 12.834 11.637C13.161 11.658 13.317 11.679 13.539 12.207C13.812 12.858 14.463 14.463 14.544 14.643C14.616 14.823 14.733 15.093 14.586 15.366C14.448 15.639 14.334 15.753 14.124 16.008C13.902 16.251 13.68 16.419 13.47 16.662C13.239 16.917 12.987 17.19 13.239 17.625C13.482 18.057 14.544 19.794 16.113 21.192C18.135 23.004 19.761 23.583 20.235 23.784C20.709 23.985 21.234 23.931 21.594 23.553C22.047 23.058 22.593 22.263 23.163 21.453C23.571 20.865 24.066 20.946 24.57 21.135C25.074 21.324 27.756 22.653 28.281 22.917C28.806 23.181 29.154 23.307 29.28 23.529C29.394 23.751 29.394 24.423 29.097 25.161V25.161Z" fill="white"/>
+              </svg>
+            </a>
+            <a href="#" class="soc-btn" aria-label="Facebook">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="18" fill="#1877F2"/>
+                <path d="M22.5 18.073H19.612V28.5H14.83V18.073H12.034V13.885H14.83V11.13C14.83 8.39 16.492 6.728 19.499 6.728H22.5V11.18H20.063C18.751 11.18 18.318 11.993 18.318 12.942V13.885H22.5L21.968 18.073Z" fill="white"/>
+              </svg>
+            </a>
+            <a href="#" class="soc-btn" aria-label="TikTok">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="36" rx="10" fill="black"/>
+                <path d="M24 10C24 12.209 25.791 14 28 14V17.5C26.068 17.5 24.28 16.71 23 15.432V23C23 26.866 19.866 30 16 30C12.134 30 9 26.866 9 23C9 19.134 12.134 16 16 16V19.5C14.067 19.5 12.5 21.067 12.5 23C12.5 24.933 14.067 26.5 16 26.5C17.933 26.5 19.5 24.933 19.5 23V6H23C23.333 7.5 24.5 8.667 26 9V10H24Z" fill="#25F4EE" transform="translate(-1, -1)"/>
+                <path d="M24 10C24 12.209 25.791 14 28 14V17.5C26.068 17.5 24.28 16.71 23 15.432V23C23 26.866 19.866 30 16 30C12.134 30 9 26.866 9 23C9 19.134 12.134 16 16 16V19.5C14.067 19.5 12.5 21.067 12.5 23C12.5 24.933 14.067 26.5 16 26.5C17.933 26.5 19.5 24.933 19.5 23V6H23C23.333 7.5 24.5 8.667 26 9V10H24Z" fill="#FE2C55" transform="translate(1, 1)"/>
+                <path d="M24 10C24 12.209 25.791 14 28 14V17.5C26.068 17.5 24.28 16.71 23 15.432V23C23 26.866 19.866 30 16 30C12.134 30 9 26.866 9 23C9 19.134 12.134 16 16 16V19.5C14.067 19.5 12.5 21.067 12.5 23C12.5 24.933 14.067 26.5 16 26.5C17.933 26.5 19.5 24.933 19.5 23V6H23C23.333 7.5 24.5 8.667 26 9V10H24Z" fill="white"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="fc-title">Layanan</div>
+          <ul class="footer-links">
+            <li><a href="#layanan">Kaos Custom</a></li>
+            <li><a href="#layanan">Hoodie & Sweater</a></li>
+            <li><a href="#layanan">Seragam Komunitas</a></li>
+            <li><a href="#layanan">Seragam Kerja</a></li>
+            <li><a href="#layanan">Sablon Premium</a></li>
+            <li><a href="#layanan">Bordir Eksklusif</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="fc-title">Navigasi</div>
+          <ul class="footer-links">
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#testimoni">Testimoni</a></li>
+            <li><a href="#kontak">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="fc-title">Jam Operasional</div>
+          <ul class="footer-links">
+            <li style="color:rgba(255,255,255,.8);font-size:.85rem;line-height:2">Senin – Jumat<br/><span style="color:var(--gold-lt);font-weight:600">08.00 – 17.00 WIB</span></li>
+            <li style="color:rgba(255,255,255,.8);font-size:.85rem;line-height:2;margin-top:6px">Sabtu<br/><span style="color:var(--gold-lt);font-weight:600">08.00 – 15.00 WIB</span></li>
+            <li style="color:rgba(255,255,255,.8);font-size:.85rem;line-height:2;margin-top:6px">Minggu<br/><span style="color:rgba(255,255,255,.5)">Libur</span></li>
+          </ul>
+          <a href="https://wa.me/6281322910056?text=Halo%20FB%20Production%2C%20saya%20ingin%20konsultasi." target="_blank" class="btn btn-gold" style="margin-top:24px;font-size:.7rem;padding:12px 18px"><i data-lucide="message-circle-more"></i> Chat Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <span class="f-copy">© 2026 FB Production · Kota Bandung. All rights reserved.</span>
+      <a href="https://wa.me/6281322910056?text=Halo%20FB%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="f-wa"><i data-lucide="message-circle"></i> Chat WhatsApp Sekarang</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA FLOAT -->
+<div class="wa-float">
+  <span class="wa-tip">Hubungi kami sekarang!</span>
+  <a href="https://wa.me/6281322910056?text=Halo%20FB%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="wa-float-btn" aria-label="WhatsApp"><i data-lucide="message-circle-more"></i></a>
+</div>
+
+<script>
+/* ── SEMUA SCRIPT & LOGIKA INTERAKSI ── */
+document.addEventListener("DOMContentLoaded", () => {
+  /* Render Lucide Icons */
+  lucide.createIcons();
+
+  /* ── Navbar ── */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', scrollY > 60), {passive:true});
+
+  /* ── Hamburger Menu ── */
+  const hbg = document.getElementById('hamburger'), mmenu = document.getElementById('mobileMenu');
+  hbg.addEventListener('click', () => {
+    const o = hbg.classList.toggle('open');
+    mmenu.style.display = o ? 'flex' : 'none';
+  });
+  document.querySelectorAll('.ml').forEach(a => a.addEventListener('click', () => {
+    hbg.classList.remove('open'); 
+    mmenu.style.display = 'none';
+  }));
+
+  /* ── FAQ Accordion ── */
+  document.querySelectorAll('.faq-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const content = btn.nextElementSibling;
+      const isActive = item.classList.contains('active');
+
+      document.querySelectorAll('.faq-item').forEach(other => {
+        other.classList.remove('active');
+        other.querySelector('.faq-content').style.maxHeight = null;
+      });
+
+      if (!isActive) {
+        item.classList.add('active');
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+
+  /* ── Animasi Kemunculan (Reveal Observer) ── */
+  const robs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 55);
+        robs.unobserve(e.target);
+      }
+    });
+  }, {threshold: 0.1});
+  document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(el => robs.observe(el));
+
+  /* ── Testimoni Slider ── */
+  const track = document.getElementById('testiTrack'), dotsEl = document.getElementById('testiDots');
+  const cards = track.querySelectorAll('.testi-card');
+  let vis = window.innerWidth <= 768 ? 1 : 3, cur = 0;
+  const maxI = () => Math.max(0, cards.length - vis);
+  
+  function buildDots(){
+    dotsEl.innerHTML = '';
+    for(let i=0; i<=maxI(); i++){
+      const d = document.createElement('button');
+      d.className = 'testi-dot' + (i === cur ? ' active' : '');
+      d.onclick = () => { resetInterval(); goTo(i); };
+      dotsEl.appendChild(d);
+    }
+  }
+
+  function goTo(idx){
+    cur = Math.max(0, Math.min(idx, maxI()));
+    track.style.transform = `translateX(-${cur * (cards[0].offsetWidth + 24)}px)`;
+    dotsEl.querySelectorAll('.testi-dot').forEach((d, i) => d.classList.toggle('active', i === cur));
+  }
+
+  let autoSlide;
+  const startInterval = () => { autoSlide = setInterval(() => goTo(cur >= maxI() ? 0 : cur + 1), 5500); };
+  const resetInterval = () => { clearInterval(autoSlide); startInterval(); };
+
+  document.getElementById('testiPrev').onclick = () => { resetInterval(); goTo(cur - 1); };
+  document.getElementById('testiNext').onclick = () => { resetInterval(); goTo(cur + 1); };
+  
+  buildDots();
+  startInterval(); // Mulai Auto Slide
+
+  window.addEventListener('resize', () => {
+    const nv = window.innerWidth <= 768 ? 1 : 3;
+    if(nv !== vis){ vis = nv; buildDots(); goTo(0); }
+  });
+
+  let ttx = 0;
+  track.addEventListener('touchstart', e => { ttx = e.changedTouches[0].clientX; clearInterval(autoSlide); }, {passive:true});
+  track.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - ttx;
+    if(Math.abs(dx) > 40) goTo(dx < 0 ? cur + 1 : cur - 1);
+    startInterval();
+  }, {passive:true});
+
+  /* ── Portfolio Lightbox ── */
+  const pfItems = document.querySelectorAll('.pf-item');
+  const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lbImg');
+  const lbMeta = document.getElementById('lbMeta'), lbDots = document.getElementById('lbDots');
+  let lbI = 0;
+
+  function updLb() {
+    const item = pfItems[lbI];
+    const imgEl = item.querySelector('img');
+    const title = imgEl.getAttribute('alt');
+    const tag = imgEl.getAttribute('data-tag');
+    
+    lbImg.src = imgEl.src.replace('&q=80', '&q=90');
+    lbImg.alt = title;
+    lbMeta.innerHTML = `<strong>${title}</strong> &nbsp;·&nbsp; ${tag}`;
+    
+    lbDots.querySelectorAll('.lb-dot').forEach((dot, i) => dot.classList.toggle('active', i === lbI));
+    
+    lbImg.style.animation = 'none';
+    lbImg.offsetHeight; 
+    lbImg.style.animation = '';
+  }
+
+  function openLb(i) {
+    lbI = i; 
+    lb.classList.add('active'); 
+    document.body.style.overflow = 'hidden'; 
+    updLb();
+  }
+
+  function closeLb() {
+    lb.classList.remove('active'); 
+    document.body.style.overflow = '';
+  }
+
+  pfItems.forEach((item, i) => {
+    item.addEventListener('click', () => openLb(i));
+    const d = document.createElement('button');
+    d.className = 'lb-dot' + (i === 0 ? ' active' : '');
+    d.onclick = () => { lbI = i; updLb(); };
+    lbDots.appendChild(d);
+  });
+
+  document.getElementById('lbClose').onclick = closeLb;
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+  
+  document.getElementById('lbPrev').onclick = e => { e.stopPropagation(); lbI = (lbI - 1 + pfItems.length) % pfItems.length; updLb(); };
+  document.getElementById('lbNext').onclick = e => { e.stopPropagation(); lbI = (lbI + 1) % pfItems.length; updLb(); };
+
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowLeft') { lbI = (lbI - 1 + pfItems.length) % pfItems.length; updLb(); }
+    if (e.key === 'ArrowRight') { lbI = (lbI + 1) % pfItems.length; updLb(); }
+  });
+
+  let ltx = 0;
+  lb.addEventListener('touchstart', e => { ltx = e.changedTouches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - ltx;
+    if (Math.abs(dx) > 50) { lbI = dx < 0 ? (lbI + 1) % pfItems.length : (lbI - 1 + pfItems.length) % pfItems.length; updLb(); }
+  }, {passive:true});
+});
+
+/* ── Form Pemesanan WA ── */
+function kirimWA(){
+  const nama=document.getElementById('fNama').value.trim();
+  const phone=document.getElementById('fPhone').value.trim();
+  const produk=document.getElementById('fProduk').value;
+  const qty=document.getElementById('fQty').value;
+  const budget=document.getElementById('fBudget').value;
+  const pesan=document.getElementById('fPesan').value.trim();
+  
+  if(!nama || !pesan){
+    alert('Mohon isi nama lengkap dan detail pesanan Anda terlebih dahulu.');
+    return;
+  }
+  
+  const msg=`Halo FB Production! 👋\n\n*Nama:* ${nama}\n*No. HP:* ${phone||'-'}\n*Produk:* ${produk||'-'}\n*Jumlah:* ${qty?qty+' pcs':'-'}\n*Anggaran:* ${budget||'-'}\n\n*Detail Pesanan:*\n${pesan}\n\nTerima kasih! 🙏`;
+  window.open('https://wa.me/6281322910056?text='+encodeURIComponent(msg),'_blank');
+}
+</script>
+</body>
+</html>
