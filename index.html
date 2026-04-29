@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Penting untuk responsivitas Mobile -->
 
   <!-- SEO UTAMA -->
-  <title>Jasa Konveksi Murah & Berkualitas | FB Production</title>
+  <title>Jasa Konveksi Murah & Berkualitas | FB7 Production</title>
 
   <meta name="description" content="Jasa konveksi terpercaya untuk pembuatan kaos, seragam, hoodie, dan custom lainnya. Harga terjangkau, kualitas terbaik, bisa order satuan & partai." />
   <meta name="keywords" content="jasa konveksi, konveksi kaos, konveksi murah, sablon kaos, bikin seragam, konveksi terdekat" />
@@ -19,7 +19,7 @@
   <meta property="og:description" content="Terima pembuatan kaos, hoodie, dan seragam custom. Bisa order kecil & besar." />
   <meta property="og:type" content="website" />
   
-  <title>FB Production — Konveksi Custom Premium</title>
+  <title>FB7 Production — Konveksi Custom Premium</title>
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -202,8 +202,25 @@ section{padding:108px 0}
 .svc-desc{font-size:.85rem;line-height:1.75;color:var(--mid)}
 .svc-num{position:absolute;bottom:14px;right:20px;font-family:var(--serif);font-size:4.5rem;font-weight:700;color:rgba(14, 165, 233, 0.05);line-height:1}
 
+/* KATEGORI PRODUK */
+#kategori { background: var(--paper); }
+.kategori-head { text-align: center; margin-bottom: 56px; }
+.kategori-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+.kat-card { background: var(--white); border: 1px solid rgba(0,0,0,.04); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,.03); transition: all var(--med); display: flex; flex-direction: column; }
+.kat-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(2, 132, 199, 0.12); }
+.kat-img-wrap { position: relative; width: 100%; aspect-ratio: 4/3; overflow: hidden; }
+.kat-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--slow); }
+.kat-card:hover .kat-img-wrap img { transform: scale(1.05); }
+.kat-body { padding: 22px; display: flex; flex-direction: column; flex: 1; }
+.kat-title { font-family: var(--serif); font-size: 1.15rem; font-weight: 700; color: var(--ink); margin-bottom: 6px; line-height: 1.3; }
+.kat-price { font-size: .85rem; font-weight: 700; color: var(--ocean-dk); margin-bottom: 14px; display: inline-block; background: var(--cream); padding: 4px 10px; border-radius: 4px; }
+.kat-desc { font-size: .85rem; color: var(--mid); line-height: 1.7; margin-bottom: 24px; flex: 1; }
+.kat-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px; font-size: .8rem; font-weight: 600; text-transform: uppercase; border-radius: 6px; background: var(--white); color: var(--ocean-dk); border: 1px solid var(--ocean-dk); transition: all var(--fast); text-decoration: none; }
+.kat-btn:hover { background: var(--ocean-dk); color: #fff; }
+.kat-btn .lucide { width: 16px; height: 16px; }
+
 /* CSS KHUSUS PORTFOLIO & LIGHTBOX */
-#portfolio { background: var(--paper); }
+#portfolio { background: var(--cream); }
 .portfolio-head { text-align: center; margin-bottom: 48px; }
 .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .pf-item { position: relative; overflow: hidden; border-radius: 8px; cursor: pointer; aspect-ratio: 4/3; box-shadow: 0 8px 24px rgba(0,0,0,.06); }
@@ -237,7 +254,7 @@ section{padding:108px 0}
 .lb-dot.active { background: var(--gold-lt); width: 24px; border-radius: 100px; }
 
 /* TESTIMONI */
-#testimoni{background:var(--cream)}
+#testimoni{background:var(--paper)}
 .testi-head{text-align:center;margin-bottom:52px}
 .testi-wrap{position:relative;overflow:hidden;padding:20px 0}
 .testi-track{display:flex;gap:24px;transition:transform .65s var(--ease)}
@@ -259,7 +276,7 @@ section{padding:108px 0}
 .t-next{right:-23px}
 
 /* FAQ SECTION */
-#faq{background:var(--paper)}
+#faq{background:var(--cream)}
 .faq-head{text-align:center;margin-bottom:52px}
 .faq-list{max-width:860px;margin:0 auto;border-top:1px solid rgba(0,0,0,.06)}
 .faq-item{border-bottom:1px solid rgba(0,0,0,.06)}
@@ -288,13 +305,13 @@ section{padding:108px 0}
 .step-desc{font-size:.85rem;color:rgba(255,255,255,.8);line-height:1.75}
 
 /* KONTAK */
-#kontak{background:var(--cream)}
+#kontak{background:var(--paper)}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
 .contact-desc{font-size:1.02rem;color:var(--mid);line-height:1.85;margin:24px 0 32px}
 .contact-details{display:flex;flex-direction:column;gap:16px;margin-bottom:32px}
-.contact-detail{display:flex;gap:16px;align-items:flex-start;padding:18px;border:1px solid rgba(0,0,0,.04);border-radius:6px;background:var(--white);transition:all var(--fast);box-shadow:0 4px 16px rgba(0,0,0,.02)}
+.contact-detail{display:flex;gap:16px;align-items:flex-start;padding:18px;border:1px solid rgba(0,0,0,.04);border-radius:6px;background:var(--cream);transition:all var(--fast);box-shadow:0 4px 16px rgba(0,0,0,.02)}
 .contact-detail:hover{border-color:var(--border-light);box-shadow:0 8px 24px rgba(2, 132, 199, 0.08);transform:translateX(5px)}
-.det-icon{width:42px;height:42px;min-width:42px;background:var(--cream);border:1px solid var(--border-light);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.det-icon{width:42px;height:42px;min-width:42px;background:var(--white);border:1px solid var(--border-light);border-radius:50%;display:flex;align-items:center;justify-content:center}
 .det-lbl{font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ocean-dk);display:block;margin-bottom:4px}
 .det-val{font-size:.9rem;font-weight:500;color:var(--ink);line-height:1.5}
 .det-val a{color:var(--ink);transition:color var(--fast)}
@@ -430,25 +447,30 @@ footer{background:var(--ocean-darker)}
   <div class="container">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
-        <span class="nav-logo-main">FB Production</span>
+        <span class="nav-logo-main">FB7 Production</span>
         <span class="nav-logo-sub">Premium Garment Studio · Kota Bandung</span>
       </a>
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#tentang">Tentang</a></li>
         <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#kategori">Produk</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#kontak">Kontak</a></li>
       </ul>
-      <a href="https://wa.me/6281322910056?text=Halo%20FB%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="btn btn-gold nav-cta"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
+      <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="btn btn-gold nav-cta"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
       <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="#hero" class="ml">Home</a><a href="#tentang" class="ml">Tentang</a>
-      <a href="#layanan" class="ml">Layanan</a><a href="#portfolio" class="ml">Portfolio</a>
-      <a href="#faq" class="ml">FAQ</a><a href="#kontak" class="ml">Kontak</a>
-      <a href="https://wa.me/6281322910056?text=Halo%20FB%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="btn btn-gold"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
+      <a href="#hero" class="ml">Home</a>
+      <a href="#tentang" class="ml">Tentang</a>
+      <a href="#layanan" class="ml">Layanan</a>
+      <a href="#kategori" class="ml">Produk</a>
+      <a href="#portfolio" class="ml">Portfolio</a>
+      <a href="#faq" class="ml">FAQ</a>
+      <a href="#kontak" class="ml">Kontak</a>
+      <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="btn btn-gold"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
     </div>
   </div>
 </nav>
@@ -469,7 +491,7 @@ footer{background:var(--ocean-darker)}
       </h1>
       <p class="hero-sub">Produksi kaos, hoodie, dan seragam dengan bahan premium, jahitan presisi, dan harga terjangkau untuk semua kebutuhan Anda.</p>
       <div class="hero-actions">
-        <a href="https://wa.me/6281322910056?text=Halo%20FB%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="btn btn-gold"><i data-lucide="shopping-cart"></i> Pesan Sekarang</a>
+        <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="btn btn-gold"><i data-lucide="shopping-cart"></i> Pesan Sekarang</a>
         <a href="#portfolio" class="btn btn-ghost">Lihat Portfolio</a>
       </div>
       <div class="hero-stats">
@@ -509,14 +531,14 @@ footer{background:var(--ocean-darker)}
           <span class="about-tag-num">7+</span>
           <span class="about-tag-lbl">Tahun</span>
         </div>
-        <img src="image/latar1.jpg" alt="Proses produksi FB Production" class="about-img-main" />
+        <img src="image/latar1.jpg" alt="Proses produksi FB7 Production" class="about-img-main" />
         <img src="image/prosescuting1.jpg" alt="Detail jahitan" class="about-img-accent" />
       </div>
       <div class="about-body reveal-r">
         <span class="sec-lbl">Tentang Kami</span>
         <h2 class="sec-title">Lebih dari Sekadar<br/>Konveksi Biasa</h2>
         <div class="dvd"><div class="dvd-line"></div><div class="dvd-gem"></div></div>
-        <p class="about-desc">FB Production adalah studio konveksi custom yang berbasis di Kota Bandung — berdedikasi menghadirkan produk pakaian berkualitas tinggi. Dari desain pertama hingga jahitan terakhir, kami memastikan setiap detail dikerjakan dengan standar premium yang konsisten.</p>
+        <p class="about-desc">FB7 Production adalah studio konveksi custom yang berbasis di Kota Bandung — berdedikasi menghadirkan produk pakaian berkualitas tinggi. Dari desain pertama hingga jahitan terakhir, kami memastikan setiap detail dikerjakan dengan standar premium yang konsisten.</p>
         <div class="about-pillars">
           <div class="pillar">
             <div class="pillar-icon"><i data-lucide="award"></i></div>
@@ -558,8 +580,133 @@ footer{background:var(--ocean-darker)}
   </div>
 </section>
 
+<!-- KATEGORI PRODUK BARU -->
+<section id="kategori">
+  <div class="container">
+    <div class="kategori-head reveal">
+      <span class="sec-lbl">Pilihan Produk</span>
+      <h2 class="sec-title">10 Kategori Produk Kami</h2>
+      <div class="dvd dvd-c"><div class="dvd-line"></div><div class="dvd-gem"></div></div>
+    </div>
+    
+    <div class="kategori-grid reveal">
+      
+      <!-- Card 1 -->
+      <div class="kat-card">
+        <div class="kat-img-wrap"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80" alt="Kaos Custom Premium"></div>
+        <div class="kat-body">
+          <h3 class="kat-title">Kaos Custom Premium</h3>
+          <span class="kat-price">Mulai Rp 45.000 / pcs</span>
+          <p class="kat-desc">Bahan katun combed 30s/24s yang super lembut dan menyerap keringat. Tersedia opsi sablon plastisol, DTF, atau bordir.</p>
+          <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production,%20saya%20tertarik%20pesan%20Kaos%20Custom%20Premium." target="_blank" class="kat-btn"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
+        </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="kat-card">
+        <div class="kat-img-wrap"><img src="https://images.unsplash.com/photo-1596755094514-f87e32f6b717?w=600&q=80" alt="Kemeja PDH / PDL"></div>
+        <div class="kat-body">
+          <h3 class="kat-title">Kemeja PDH / PDL</h3>
+          <span class="kat-price">Mulai Rp 110.000 / pcs</span>
+          <p class="kat-desc">Kemeja formal dan lapangan tangguh. Dibuat menggunakan bahan American Drill atau Nagata Drill yang kokoh dan sangat rapi.</p>
+          <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production,%20saya%20tertarik%20pesan%20Kemeja%20PDH/PDL." target="_blank" class="kat-btn"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="kat-card">
+        <div class="kat-img-wrap"><img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&q=80" alt="Hoodie & Sweater"></div>
+        <div class="kat-body">
+          <h3 class="kat-title">Hoodie & Sweater</h3>
+          <span class="kat-price">Mulai Rp 120.000 / pcs</span>
+          <p class="kat-desc">Jaket atau hoodie dengan bahan Fleece Premium. Nyaman digunakan di iklim tropis, siap di-custom menggunakan bordir tebal.</p>
+          <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production,%20saya%20tertarik%20pesan%20Hoodie%20atau%20Sweater." target="_blank" class="kat-btn"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="kat-card">
+        <div class="kat-img-wrap"><img src="https://images.unsplash.com/photo-1586363104862-3a5e222eeac0?w=600&q=80" alt="Polo Shirt Kerah"></div>
+        <div class="kat-body">
+          <h3 class="kat-title">Polo Shirt (Wangki)</h3>
+          <span class="kat-price">Mulai Rp 75.000 / pcs</span>
+          <p class="kat-desc">Kaos kerah dari material Lacoste Pique yang elegan dan jatuh di badan. Sangat cocok untuk seragam event atau identitas karyawan.</p>
+          <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production,%20saya%20tertarik%20pesan%20Polo%20Shirt." target="_blank" class="kat-btn"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="kat-card">
+        <div class="kat-img-wrap"><img src="https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=600&q=80" alt="Jaket Varsity / Bomber"></div>
+        <div class="kat-body">
+          <h3 class="kat-title">Jaket Varsity & Bomber</h3>
+          <span class="kat-price">Mulai Rp 135.000 / pcs</span>
+          <p class="kat-desc">Jaket stylish custom terbaik untuk komunitas atau organisasi kampus. Pilihan material: Taslan (anti air), Canvas, atau paduan Fleece.</p>
+          <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production,%20saya%20tertarik%20pesan%20Jaket%20Varsity/Bomber." target="_blank" class="kat-btn"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="kat-card">
+        <div class="kat-img-wrap"><img src="https://images.unsplash.com/photo-1577416412292-747c6607f055?w=600&q=80" alt="Seragam Olahraga & Jersey"></div>
+        <div class="kat-body">
+          <h3 class="kat-title">Seragam Olahraga & Jersey</h3>
+          <span class="kat-price">Mulai Rp 85.000 / stel</span>
+          <p class="kat-desc">Setelan celana & jersey untuk futsal, sepeda, lari, dll. Memakai teknik full printing sublimasi dengan tinta tajam & awet.</p>
+          <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production,%20saya%20tertarik%20pesan%20Jersey/Olahraga." target="_blank" class="kat-btn"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="kat-card">
+        <div class="kat-img-wrap"><img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&q=80" alt="Wearpack / Seragam Safety"></div>
+        <div class="kat-body">
+          <h3 class="kat-title">Wearpack & Seragam Safety</h3>
+          <span class="kat-price">Mulai Rp 140.000 / pcs</span>
+          <p class="kat-desc">Baju keselamatan kerja berstandar tinggi. Terbuat dari bahan Drill tebal pelindung ekstra, dilengkapi dengan pita reflektor (scotlight).</p>
+          <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production,%20saya%20tertarik%20pesan%20Wearpack%20Safety." target="_blank" class="kat-btn"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="kat-card">
+        <div class="kat-img-wrap"><img src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=600&q=80" alt="Topi Custom Event"></div>
+        <div class="kat-body">
+          <h3 class="kat-title">Topi Custom Bordir</h3>
+          <span class="kat-price">Mulai Rp 25.000 / pcs</span>
+          <p class="kat-desc">Pilihan jenis topi beragam: Trucker, Baseball Cap, Snapback, atau model Rimba lapang. Pesanan minimum untuk topi adalah 50 pcs.</p>
+          <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production,%20saya%20tertarik%20pesan%20Topi%20Custom." target="_blank" class="kat-btn"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="kat-card">
+        <div class="kat-img-wrap"><img src="https://images.unsplash.com/photo-1590403756209-6ee103328e3b?w=600&q=80" alt="Rompi Lapangan"></div>
+        <div class="kat-body">
+          <h3 class="kat-title">Rompi Lapangan & Vest</h3>
+          <span class="kat-price">Mulai Rp 95.000 / pcs</span>
+          <p class="kat-desc">Pakaian luaran untuk wartawan, relawan, kru lapangan. Dirancang menggunakan furing halus dan aneka kantong penyimpanan besar.</p>
+          <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production,%20saya%20tertarik%20pesan%20Rompi%20Lapangan." target="_blank" class="kat-btn"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="kat-card">
+        <div class="kat-img-wrap"><img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&q=80" alt="Celemek / Apron"></div>
+        <div class="kat-body">
+          <h3 class="kat-title">Celemek (Apron) Premium</h3>
+          <span class="kat-price">Mulai Rp 55.000 / pcs</span>
+          <p class="kat-desc">Celemek untuk barista atau chef profesional. Material dominan dari Canvas premium, bisa di-custom menggunakan badge logo kulit imitasi.</p>
+          <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production,%20saya%20tertarik%20pesan%20Apron%20atau%20Celemek." target="_blank" class="kat-btn"><i data-lucide="shopping-bag"></i> Pesan Sekarang</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- PORTFOLIO -->
-<section id="portfolio">
+<section id="portfolio" style="background: var(--cream);">
   <div class="container">
     <div class="portfolio-head reveal">
       <span class="sec-lbl">Portfolio Galeri</span>
@@ -578,7 +725,7 @@ footer{background:var(--ocean-darker)}
       </div>
       <!-- Item 2 -->
       <div class="pf-item">
-        <img src="image/hodie3.jpg" alt="Hoodie Premium Series" data-tag="Hoodie · 80 pcs" />
+        <img src="image/hodie5.jpg" alt="Hoodie Premium Series" data-tag="Hoodie · 80 pcs" />
         <div class="pf-overlay"><button class="pf-zoom"><i data-lucide="search"></i></button>
           <div><div class="pf-label">Hoodie Premium Series</div><div class="pf-tag">Hoodie · 80 pcs</div></div>
         </div>
@@ -706,7 +853,7 @@ footer{background:var(--ocean-darker)}
         <!-- Card 1 -->
         <div class="testi-card">
           <div class="testi-stars">★★★★★</div><div class="testi-q">"</div>
-          <p class="testi-text">Hasil sablon sangat rapi dan detail, warnanya presisi sesuai desain yang kami kirim. Tim FB Production juga responsif dan selalu update proses produksi.</p>
+          <p class="testi-text">Hasil sablon sangat rapi dan detail, warnanya presisi sesuai desain yang kami kirim. Tim FB7 Production juga responsif dan selalu update proses produksi.</p>
           <div class="testi-author">
             <div class="testi-av" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80');"></div>
             <div><div class="testi-name">Rendi Dwi Saputra</div><div class="testi-role">Ketua Komunitas Motor</div></div>
@@ -766,7 +913,7 @@ footer{background:var(--ocean-darker)}
     <div class="faq-list reveal">
       <div class="faq-item">
         <button class="faq-btn"><span>1. Berapa minimum order (MOQ) untuk pemesanan?</span><i data-lucide="plus"></i></button>
-        <div class="faq-content"><p>Minimum order di FB Production adalah 12 pcs per desain/warna. Untuk jumlah di atas 100 pcs, kami memberikan harga khusus yang lebih terjangkau.</p></div>
+        <div class="faq-content"><p>Minimum order di FB7 Production adalah 12 pcs per desain/warna. Untuk jumlah di atas 100 pcs, kami memberikan harga khusus yang lebih terjangkau.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-btn"><span>2. Berapa lama waktu pengerjaan / produksi?</span><i data-lucide="plus"></i></button>
@@ -777,7 +924,7 @@ footer{background:var(--ocean-darker)}
         <div class="faq-content"><p>Ya, kami dapat membuat sampel fisik berbayar sebelum produksi massal dimulai. Jika Anda melanjutkan produksi masal bersama kami, biaya pembuatan sampel tersebut akan dipotong sebagian.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-btn"><span>4. Apakah FB Production menyediakan jasa desain?</span><i data-lucide="plus"></i></button>
+        <button class="faq-btn"><span>4. Apakah FB7 Production menyediakan jasa desain?</span><i data-lucide="plus"></i></button>
         <div class="faq-content"><p>Tentu saja. Kami memiliki tim desainer internal yang siap membantu memvisualisasikan ide Anda. Jasa desain kami berikan <strong>gratis</strong> khusus untuk Anda yang sudah melakukan pembayaran uang muka (DP).</p></div>
       </div>
       <div class="faq-item">
@@ -798,7 +945,7 @@ footer{background:var(--ocean-darker)}
       </div>
       <div class="faq-item">
         <button class="faq-btn"><span>9. Apakah ada garansi untuk produk yang cacat?</span><i data-lucide="plus"></i></button>
-        <div class="faq-content"><p>FB Production menjamin 100% garansi perbaikan atau penggantian barang baru jika terdapat cacat pabrik, jahitan lepas, cacat sablon, atau kesalahan warna yang tidak sesuai dengan nota kesepakatan produksi.</p></div>
+        <div class="faq-content"><p>FB7 Production menjamin 100% garansi perbaikan atau penggantian barang baru jika terdapat cacat pabrik, jahitan lepas, cacat sablon, atau kesalahan warna yang tidak sesuai dengan nota kesepakatan produksi.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-btn"><span>10. Bisakah saya membawa kain sendiri (Makloon)?</span><i data-lucide="plus"></i></button>
@@ -877,7 +1024,7 @@ footer{background:var(--ocean-darker)}
             src="https://maps.google.com/maps?q=Jl.+Surapati+No.+78,+Kota+Bandung&t=&z=14&ie=UTF8&iwloc=&output=embed"
             allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Lokasi FB Production - Kota Bandung">
+            title="Lokasi FB7 Production - Kota Bandung">
           </iframe>
         </div>
       </div>
@@ -922,7 +1069,7 @@ footer{background:var(--ocean-darker)}
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="fb-name">FB Production</div>
+          <div class="fb-name">FB7 Production</div>
           <span class="fb-tag">Premium Garment Studio</span>
           <p class="fb-desc">Solusi konveksi custom berkualitas untuk komunitas, bisnis, dan personal brand. Berkomitmen menghadirkan produk terbaik dengan harga yang adil.</p>
           <div class="fb-addr">
@@ -994,15 +1141,15 @@ footer{background:var(--ocean-darker)}
             <li style="color:rgba(255,255,255,.8);font-size:.85rem;line-height:2;margin-top:6px">Sabtu<br/><span style="color:var(--gold-lt);font-weight:600">08.00 – 15.00 WIB</span></li>
             <li style="color:rgba(255,255,255,.8);font-size:.85rem;line-height:2;margin-top:6px">Minggu<br/><span style="color:rgba(255,255,255,.5)">Libur</span></li>
           </ul>
-          <a href="https://wa.me/6281322910056?text=Halo%20FB%20Production%2C%20saya%20ingin%20konsultasi." target="_blank" class="btn btn-gold" style="margin-top:24px;font-size:.7rem;padding:12px 18px"><i data-lucide="message-circle-more"></i> Chat Sekarang</a>
+          <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production%2C%20saya%20ingin%20konsultasi." target="_blank" class="btn btn-gold" style="margin-top:24px;font-size:.7rem;padding:12px 18px"><i data-lucide="message-circle-more"></i> Chat Sekarang</a>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="footer-bottom">
-      <span class="f-copy">© 2026 FB Production · Kota Bandung. All rights reserved.</span>
-      <a href="https://wa.me/6281322910056?text=Halo%20FB%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="f-wa"><i data-lucide="message-circle"></i> Chat WhatsApp Sekarang</a>
+      <span class="f-copy">© 2026 FB7 Production · Kota Bandung. All rights reserved.</span>
+      <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="f-wa"><i data-lucide="message-circle"></i> Chat WhatsApp Sekarang</a>
     </div>
   </div>
 </footer>
@@ -1010,7 +1157,7 @@ footer{background:var(--ocean-darker)}
 <!-- WA FLOAT -->
 <div class="wa-float">
   <span class="wa-tip">Hubungi kami sekarang!</span>
-  <a href="https://wa.me/6281322910056?text=Halo%20FB%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="wa-float-btn" aria-label="WhatsApp"><i data-lucide="message-circle-more"></i></a>
+  <a href="https://wa.me/6281322910056?text=Halo%20FB7%20Production%2C%20saya%20ingin%20pesan%20produk%20custom." target="_blank" class="wa-float-btn" aria-label="WhatsApp"><i data-lucide="message-circle-more"></i></a>
 </div>
 
 <script>
@@ -1187,7 +1334,7 @@ function kirimWA(){
     return;
   }
   
-  const msg=`Halo FB Production! 👋\n\n*Nama:* ${nama}\n*No. HP:* ${phone||'-'}\n*Produk:* ${produk||'-'}\n*Jumlah:* ${qty?qty+' pcs':'-'}\n*Anggaran:* ${budget||'-'}\n\n*Detail Pesanan:*\n${pesan}\n\nTerima kasih! 🙏`;
+  const msg=`Halo FB7 Production! 👋\n\n*Nama:* ${nama}\n*No. HP:* ${phone||'-'}\n*Produk:* ${produk||'-'}\n*Jumlah:* ${qty?qty+' pcs':'-'}\n*Anggaran:* ${budget||'-'}\n\n*Detail Pesanan:*\n${pesan}\n\nTerima kasih! 🙏`;
   window.open('https://wa.me/6281322910056?text='+encodeURIComponent(msg),'_blank');
 }
 </script>
